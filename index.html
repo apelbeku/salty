@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salty</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
+    <!-- Header -->
+
+  <header class="absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="./index.html" class="font-bold text-lg text-primary block py-6"><img src="./src/img/salty.png" alt="Salty Logo" class="w-20"></a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex lg:items-center">
+              <li class="group">
+                <a href="./index.html" class="flex text-base text-primary py-2 mx-8 group-hover:text-gray group-hover:border-b group-hover:border-solid group-hover:border-primary">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="./index.html" class="flex text-base text-primary py-2 mx-8 group-hover:text-gray group-hover:border-b group-hover:border-solid group-hover:border-primary">About us</a>
+              </li>
+              <li class="group">
+                <a href="./index.html" class="flex text-base text-primary py-2 mx-8 group-hover:text-gray group-hover:border-b group-hover:border-solid group-hover:border-primary">Destinations</a>
+              </li>
+              <li class="group">
+                <a href="./index.html" class="flex text-base text-primary py-2 mx-8 group-hover:text-gray group-hover:border-b group-hover:border-solid group-hover:border-primary"> Tours</a>
+              </li>
+              <li class="group">
+                <a href="./index.html" class="flex text-base text-primary py-2 mx-8 group-hover:text-gray group-hover:border-b group-hover:border-solid group-hover:border-primary">Blog</a>
+              </li>
+              <li class="group">
+                <a href="#" class="flex font-bold text-base text-secondary py-5 mx-8 group-hover:text-beige group-hover:border-b group-hover:border-solid group-hover:border-beige lg:hidden">Sign In</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="px-4">
+          <a href="./index.html" class="hidden my-6 px-4 py-2 text-base text-secondary border border-solid border-secondary rounded-full lg:block">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <script src="./dist/script.js"></script>
 </body>
 </html>
